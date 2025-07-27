@@ -1,0 +1,86 @@
+/* Import Tailwind CSS */
+@import url("https://cdn.tailwindcss.com");
+
+/* Custom CSS for the portfolio website */
+
+/* Base styles for the body and font */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Default text color and background for the entire body */
+    color: #1e293b; /* Slate 900 */
+    background-color: #f8fafc; /* Light Slate 50 */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Custom class for section headings with an underline effect */
+.section-heading {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem; /* Space for the underline */
+}
+
+/* Pseudo-element for the animated underline effect on section headings */
+.section-heading::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position relative to the parent heading */
+    left: 0; /* Start from the left edge of the heading */
+    bottom: 0; /* Position at the bottom of the heading */
+    width: 50%; /* Initial width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #6366f1; /* Indigo 500 */
+    border-radius: 9999px; /* Fully rounded corners for the underline */
+    transition: width 0.3s ease-in-out; /* Smooth transition for width change */
+}
+
+/* Enlarge the underline on hover for section headings */
+.section-heading:hover::after {
+    width: 100%; /* Expand to full width on hover */
+}
+
+/* Keyframe animation for a subtle fade-in-up effect */
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0; /* Start completely transparent */
+        transform: translateY(20px); /* Start 20px below its final position */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* End at its original position */
+    }
+}
+
+/* Apply the fade-in-up animation to elements with these classes */
+.animate-fade-in-up {
+    animation: fadeInFromBottom 0.8s ease-out forwards; /* Apply animation */
+    opacity: 0; /* Keep element hidden until animation starts */
+}
+
+/* Add a delay to the animation for staggered effects */
+.animate-fade-in-up.delay-100 {
+    animation-delay: 0.1s;
+}
+
+/* Ensure sections take up at least a certain height for better visual spacing */
+.min-h-screen-75 {
+    min-height: 75vh; /* At least 75% of viewport height */
+}
+
+/* Styling for the social media icons in the footer */
+footer a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .section-heading {
+        text-align: center; /* Center align headings on small screens */
+    }
+    .section-heading::after {
+        left: 50%; /* Center the underline */
+        transform: translateX(-50%); /* Adjust for perfect centering */
+    }
+}

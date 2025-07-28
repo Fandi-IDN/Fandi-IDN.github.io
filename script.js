@@ -75,4 +75,49 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500); // Simulate 1.5 second delay
         });
     }
+
+    // Responsive Navbar Toggle with Slide Down Animation
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinksContainer = document.getElementById('nav-links');
+    if (menuToggle && navLinksContainer) {
+        menuToggle.addEventListener('click', function() {
+            if (navLinksContainer.classList.contains('hidden')) {
+                navLinksContainer.classList.remove('hidden');
+                setTimeout(() => {
+                    navLinksContainer.classList.remove('-translate-y-4', 'opacity-0');
+                    navLinksContainer.classList.add('translate-y-0', 'opacity-100');
+                }, 10); // allow DOM to update
+            } else {
+                navLinksContainer.classList.remove('translate-y-0', 'opacity-100');
+                navLinksContainer.classList.add('-translate-y-4', 'opacity-0');
+                setTimeout(() => {
+                    navLinksContainer.classList.add('hidden');
+                }, 300); // match transition duration
+            }
+        });
+    }
+
+    // Smooth scroll for Explore My Experience button
+    const exploreBtn = document.getElementById('explore-experience-btn');
+    if (exploreBtn) {
+        exploreBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.getElementById('experience');
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
+    // Smooth scroll for "Fandi." brand link in header
+    const brandLink = document.querySelector('a[href="#hero"]');
+    if (brandLink) {
+        brandLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.getElementById('hero');
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
 });

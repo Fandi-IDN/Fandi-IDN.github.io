@@ -11,64 +11,64 @@
     <!-- Inter Font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-inter antialiased text-gray-800 bg-gray-50">
+<body class="font-inter antialiased text-gray-900" style="background-color: #fff;">
 
     <!-- Header & Navigation -->
-    <header class="bg-white shadow-sm py-4 fixed w-full z-50">
+    <header class="shadow-sm py-4 fixed w-full z-50" style="background-color: #fff;">
         <nav class="container mx-auto px-4 flex justify-between items-center">
-            <a href="#hero" class="text-2xl font-bold text-indigo-600 rounded-md">Fandi.</a>
+            <a href="#hero" class="text-2xl font-bold" style="color: #c1121f;">Fandi.</a>
             <!-- Hamburger Button (visible on small screens) -->
-            <button id="menu-toggle" class="md:hidden flex items-center px-3 py-2 border rounded text-indigo-600 border-indigo-600 focus:outline-none" aria-label="Toggle Menu">
+            <button id="menu-toggle" class="md:hidden flex items-center px-3 py-2 border rounded" style="color: #c1121f; border-color: #c1121f;" aria-label="Toggle Menu">
                 <span class="font-semibold mr-2">Menu</span>
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
             </button>
             <!-- Navigation Links -->
-            <ul id="nav-links" class="flex-col md:flex-row md:flex space-y-4 md:space-y-0 md:space-x-6 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none px-4 md:px-0 py-4 md:py-0 z-40 hidden md:flex transition-all duration-300 transform md:transform-none -translate-y-4 opacity-0 md:opacity-100 md:translate-y-0">
-                <li><a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md">About</a></li>
-                <li><a href="#experience" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md">Experience</a></li>
-                <li><a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md">Skills</a></li>
-                <li><a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md">Projects</a></li>
-                <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 rounded-md">Contact</a></li>
+            <ul id="nav-links" class="flex-col md:flex-row md:flex space-y-4 md:space-y-0 md:space-x-6 absolute md:static top-16 left-0 w-full md:w-auto shadow-md md:shadow-none px-4 md:px-0 py-4 md:py-0 z-40 hidden md:flex transition-all duration-300 transform md:transform-none -translate-y-4 opacity-0 md:opacity-100 md:translate-y-0"
+                style="background-color: #fff;">
+                <li><a href="#about" class="font-medium transition duration-300 rounded-md" style="color:#222; --tw-text-opacity:1;" onmouseover="this.style.color='#c1121f'" onmouseout="this.style.color='#222'">About</a></li>
+                <li><a href="#experience" class="font-medium transition duration-300 rounded-md" style="color:#222; --tw-text-opacity:1;" onmouseover="this.style.color='#c1121f'" onmouseout="this.style.color='#222'">Experience</a></li>
+                <li><a href="#skills" class="font-medium transition duration-300 rounded-md" style="color:#222; --tw-text-opacity:1;" onmouseover="this.style.color='#c1121f'" onmouseout="this.style.color='#222'">Skills</a></li>
+                <li><a href="#projects" class="font-medium transition duration-300 rounded-md" style="color:#222; --tw-text-opacity:1;" onmouseover="this.style.color='#c1121f'" onmouseout="this.style.color='#222'">Projects</a></li>
+                <li><a href="#contact" class="font-medium transition duration-300 rounded-md" style="color:#222; --tw-text-opacity:1;" onmouseover="this.style.color='#c1121f'" onmouseout="this.style.color='#222'">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-24 md:py-36 flex items-center justify-center min-h-screen-75">
-        <div class="container mx-auto px-4 text-center z-10">
-            <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                <!-- Replace with your professional photo -->
-                <img src="https://placehold.co/128x128/6366f1/ffffff?text=MF" alt="Mohammad Fandi Azhzharif" class="w-full h-full object-cover">
+    <section id="hero" 
+    class="relative py-24 md:py-36 flex items-center justify-center min-h-screen-75"
+    style="background: radial-gradient(ellipse at center, rgba(193,18,31,0.08) 0%, #fff 70%);">
+        <div class="container mx-auto px-4 z-10 flex flex-col md:flex-row items-center md:items-start md:justify-start">
+            <div class="w-full md:w-2/3 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up" style="color:#c1121f;">
+                    MOHAMMAD FANDI AZHZHARIF
+                </h1>
+                <p class="text-lg md:text-2xl mb-8 opacity-90 animate-fade-in-up delay-100" style="color:#222;">
+                    A dedicated [Your Profession/Role] with a passion for [Your Key Interest/Area].
+                </p>
+                <a href="#experience" id="explore-experience-btn" class="inline-block font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+                   style="background-color:#c1121f; color:#fff;" onmouseover="this.style.backgroundColor='#a10e18';this.style.color='#fff'" onmouseout="this.style.backgroundColor='#c1121f';this.style.color='#fff'">
+                    Explore My Experience
+                </a>
             </div>
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
-                Hello, I'm Mohammad Fandi Azhzharif
-            </h1>
-            <p class="text-lg md:text-2xl mb-8 opacity-90 animate-fade-in-up delay-100">
-                A dedicated [Your Profession/Role] with a passion for [Your Key Interest/Area].
-            </p>
-            <a href="#experience" class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 hover:text-indigo-800 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Explore My Experience
-            </a>
         </div>
-        <!-- Optional: Add a subtle background pattern or shape for visual interest -->
         <div class="absolute inset-0 bg-pattern opacity-10"></div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="py-16 md:py-24 bg-white">
+    <section id="about" class="py-16 md:py-24" style="background-color: #fff;">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
-                <!-- Replace with an image of yourself or a relevant graphic -->
                 <img src="https://placehold.co/600x400/e0e7ff/4338ca?text=About+Me" alt="About Me Image" class="rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105">
             </div>
             <div class="md:w-1/2 text-center md:text-left">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 section-heading">About Me</h2>
-                <p class="text-gray-700 leading-relaxed mb-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 section-heading" style="color:#c1121f;">About Me</h2>
+                <p class="leading-relaxed mb-4" style="color:#222;">
                     I am Mohammad Fandi Azhzharif, a [Your Profession/Role, e.g., Software Engineer, Marketing Specialist, Data Analyst] with [Number] years of experience in [Your Industry/Field]. My expertise lies in [Key Area 1], [Key Area 2], and [Key Area 3].
                 </p>
-                <p class="text-gray-700 leading-relaxed">
+                <p class="leading-relaxed" style="color:#222;">
                     I thrive in dynamic environments where I can apply my problem-solving skills and contribute to impactful projects. I am passionate about [Your Passion related to work, e.g., building scalable solutions, creating engaging content, deriving insights from data] and continuously seek opportunities to grow and innovate.
                 </p>
             </div>
@@ -76,17 +76,16 @@
     </section>
 
     <!-- Work Experience Section -->
-    <section id="experience" class="py-16 md:py-24 bg-gray-100">
+    <section id="experience" class="py-16 md:py-24" style="background-color: #fff;">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-heading mx-auto">Work Experience</h2>
-
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-heading mx-auto" style="color:#c1121f;">Work Experience</h2>
             <div class="space-y-12">
                 <!-- Experience Entry 1 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Senior [Your Role]</h3>
-                    <p class="text-lg text-gray-600 mb-2">Company Name, City, Country</p>
-                    <p class="text-sm text-gray-500 mb-4">Month Year – Month Year (e.g., Jan 2022 – Present)</p>
-                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
+                <div class="bg-[#fff] p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold mb-2" style="color:#c1121f;">Senior [Your Role]</h3>
+                    <p class="text-lg mb-2" style="color:#a10e18;">Company Name, City, Country</p>
+                    <p class="text-sm mb-4" style="color:#c1121f;opacity:0.7;">Month Year – Month Year (e.g., Jan 2022 – Present)</p>
+                    <ul class="list-disc list-inside text-left" style="color:#222;">
                         <li>Led a team of [number] developers in the successful launch of [Project Name], resulting in a [percentage]% increase in [metric].</li>
                         <li>Designed and implemented [specific feature/system] using [technologies], improving [aspect] by [percentage]%.</li>
                         <li>Collaborated with cross-functional teams to define project requirements and deliver solutions on time and within budget.</li>
@@ -95,11 +94,11 @@
                 </div>
 
                 <!-- Experience Entry 2 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-2">[Your Role]</h3>
-                    <p class="text-lg text-gray-600 mb-2">Another Company, City, Country</p>
-                    <p class="text-sm text-gray-500 mb-4">Month Year – Month Year (e.g., Aug 2019 – Dec 2021)</p>
-                    <ul class="list-disc list-inside text-left text-gray-700 space-y-2">
+                <div class="bg-[#fff] p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold mb-2" style="color:#c1121f;">[Your Role]</h3>
+                    <p class="text-lg mb-2" style="color:#a10e18;">Another Company, City, Country</p>
+                    <p class="text-sm mb-4" style="color:#c1121f;opacity:0.7;">Month Year – Month Year (e.g., Aug 2019 – Dec 2021)</p>
+                    <ul class="list-disc list-inside text-left" style="color:#222;">
                         <li>Developed and maintained [type of software/system] using [technologies], contributing to [specific outcome].</li>
                         <li>Participated in the full software development lifecycle, from requirements gathering to deployment.</li>
                         <li>Optimized existing codebases, reducing load times by [percentage]% and improving user experience.</li>
@@ -113,14 +112,14 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16 md:py-24 bg-white">
+    <section id="skills" class="py-16 md:py-24" style="background-color: #fff;">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-heading mx-auto">My Skills</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-heading mx-auto" style="color:#c1121f;">My Skills</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <!-- Skill Category 1 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <h3 class="text-xl font-semibold mb-3 text-indigo-600">Programming Languages</h3>
-                    <ul class="text-gray-700 text-sm space-y-1">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <h3 class="text-xl font-semibold mb-3" style="color:#c1121f;">Programming Languages</h3>
+                    <ul class="text-sm space-y-1" style="color:#222;">
                         <li>JavaScript</li>
                         <li>Python</li>
                         <li>Java</li>
@@ -128,9 +127,9 @@
                     </ul>
                 </div>
                 <!-- Skill Category 2 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <h3 class="text-xl font-semibold mb-3 text-indigo-600">Frameworks & Libraries</h3>
-                    <ul class="text-gray-700 text-sm space-y-1">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <h3 class="text-xl font-semibold mb-3" style="color:#c1121f;">Frameworks & Libraries</h3>
+                    <ul class="text-sm space-y-1" style="color:#222;">
                         <li>React.js</li>
                         <li>Node.js</li>
                         <li>Tailwind CSS</li>
@@ -138,9 +137,9 @@
                     </ul>
                 </div>
                 <!-- Skill Category 3 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <h3 class="text-xl font-semibold mb-3 text-indigo-600">Tools & Platforms</h3>
-                    <ul class="text-gray-700 text-sm space-y-1">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <h3 class="text-xl font-semibold mb-3" style="color:#c1121f;">Tools & Platforms</h3>
+                    <ul class="text-sm space-y-1" style="color:#222;">
                         <li>Git & GitHub</li>
                         <li>Docker</li>
                         <li>AWS / GCP</li>
@@ -148,9 +147,9 @@
                     </ul>
                 </div>
                 <!-- Skill Category 4 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                    <h3 class="text-xl font-semibold mb-3 text-indigo-600">Databases</h3>
-                    <ul class="text-gray-700 text-sm space-y-1">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <h3 class="text-xl font-semibold mb-3" style="color:#c1121f;">Databases</h3>
+                    <ul class="text-sm space-y-1" style="color:#222;">
                         <li>SQL (PostgreSQL, MySQL)</li>
                         <li>MongoDB</li>
                         <li>(Add more)</li>
@@ -162,39 +161,39 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 md:py-24 bg-gray-100">
+    <section id="projects" class="py-16 md:py-24" style="background-color: #fff;">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-heading mx-auto">Featured Projects</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-heading mx-auto" style="color:#c1121f;">Featured Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Project Card 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <div class="bg-[#fff] rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
                     <img src="https://placehold.co/600x400/a78bfa/ffffff?text=Project+A" alt="Project A" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Project Name A</h3>
-                        <p class="text-gray-700 text-sm mb-4">A brief description of this project, highlighting your role, the technologies used, and the key outcomes or impact. This could be a work project (if permissible to share) or a significant personal project.</p>
-                        <a href="#" class="inline-block bg-indigo-600 text-white text-sm font-medium py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-300">
+                        <h3 class="text-xl font-semibold mb-2" style="color:#c1121f;">Project Name A</h3>
+                        <p class="text-sm mb-4" style="color:#222;">A brief description of this project, highlighting your role, the technologies used, and the key outcomes or impact. This could be a work project (if permissible to share) or a significant personal project.</p>
+                        <a href="#" class="inline-block" style="background-color:#c1121f;color:#fff;padding:0.5rem 1rem;border-radius:0.375rem;font-weight:500;transition:all .3s;" onmouseover="this.style.backgroundColor='#a10e18';this.style.color='#fff'" onmouseout="this.style.backgroundColor='#c1121f';this.style.color='#fff'">
                             View Details
                         </a>
                     </div>
                 </div>
                 <!-- Project Card 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <div class="bg-[#fff] rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
                     <img src="https://placehold.co/600x400/c4b5fd/ffffff?text=Project+B" alt="Project B" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Project Name B</h3>
-                        <p class="text-gray-700 text-sm mb-4">Another project description, focusing on the problem it solved, the technical challenges, and your specific contributions. Mention any metrics or successes achieved.</p>
-                        <a href="#" class="inline-block bg-indigo-600 text-white text-sm font-medium py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-300">
+                        <h3 class="text-xl font-semibold mb-2" style="color:#c1121f;">Project Name B</h3>
+                        <p class="text-sm mb-4" style="color:#222;">Another project description, focusing on the problem it solved, the technical challenges, and your specific contributions. Mention any metrics or successes achieved.</p>
+                        <a href="#" class="inline-block" style="background-color:#c1121f;color:#fff;padding:0.5rem 1rem;border-radius:0.375rem;font-weight:500;transition:all .3s;" onmouseover="this.style.backgroundColor='#a10e18';this.style.color='#fff'" onmouseout="this.style.backgroundColor='#c1121f';this.style.color='#fff'">
                             View Details
                         </a>
                     </div>
                 </div>
                 <!-- Project Card 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <div class="bg-[#fff] rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
                     <img src="https://placehold.co/600x400/ddd6fe/ffffff?text=Project+C" alt="Project C" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Project Name C</h3>
-                        <p class="text-gray-700 text-sm mb-4">A third project description. If you have a GitHub repo for this, link to it. If it's a deployed app, link to the live demo. Emphasize the skills demonstrated.</p>
-                        <a href="#" class="inline-block bg-indigo-600 text-white text-sm font-medium py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-300">
+                        <h3 class="text-xl font-semibold mb-2" style="color:#c1121f;">Project Name C</h3>
+                        <p class="text-sm mb-4" style="color:#222;">A third project description. If you have a GitHub repo for this, link to it. If it's a deployed app, link to the live demo. Emphasize the skills demonstrated.</p>
+                        <a href="#" class="inline-block" style="background-color:#c1121f;color:#fff;padding:0.5rem 1rem;border-radius:0.375rem;font-weight:500;transition:all .3s;" onmouseover="this.style.backgroundColor='#a10e18';this.style.color='#fff'" onmouseout="this.style.backgroundColor='#c1121f';this.style.color='#fff'">
                             View Details
                         </a>
                     </div>
@@ -204,25 +203,26 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 bg-white">
+    <section id="contact" class="py-16 md:py-24" style="background-color: #fff;">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-heading mx-auto">Let's Connect</h2>
-            <div class="max-w-xl mx-auto bg-gray-50 p-8 rounded-lg shadow-xl">
-                <p class="text-gray-700 mb-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-heading mx-auto" style="color:#c1121f;">Let's Connect</h2>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-xl">
+                <p class="mb-6" style="color:#222;">
                     I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out!
                 </p>
                 <form id="contactForm" class="space-y-6">
                     <div>
-                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-[#c1121f] focus:border-[#c1121f]" style="background-color:#fff;color:#222;" required>
                     </div>
                     <div>
-                        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-[#c1121f] focus:border-[#c1121f]" style="background-color:#fff;color:#222;" required>
                     </div>
                     <div>
-                        <textarea id="message" name="message" rows="6" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required></textarea>
+                        <textarea id="message" name="message" rows="6" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-md focus:ring-[#c1121f] focus:border-[#c1121f]" style="background-color:#fff;color:#222;" required></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105">
+                        <button type="submit" class="w-full font-semibold py-3 px-6 rounded-md transition duration-300 ease-in-out transform hover:scale-105"
+                            style="background-color:#c1121f;color:#fff;" onmouseover="this.style.backgroundColor='#a10e18';this.style.color='#fff'" onmouseout="this.style.backgroundColor='#c1121f';this.style.color='#fff'">
                             Send Message
                         </button>
                     </div>
@@ -233,13 +233,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="py-8" style="background-color:#c1121f;color:#fff;">
         <div class="container mx-auto px-4 text-center text-sm">
             <p>&copy; 2025 Mohammad Fandi Azhzharif. All rights reserved.</p>
             <div class="flex justify-center space-x-4 mt-4">
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-white transition duration-300 rounded-md">LinkedIn</a>
-                <a href="https://github.com/yourprofile" target="_blank" class="text-gray-400 hover:text-white transition duration-300 rounded-md">GitHub</a>
-                <a href="https://twitter.com/yourprofile" target="_blank" class="text-gray-400 hover:text-white transition duration-300 rounded-md">Twitter</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="transition duration-300 rounded-md footer-link">LinkedIn</a>
+                <a href="https://github.com/yourprofile" target="_blank" class="transition duration-300 rounded-md footer-link">GitHub</a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="transition duration-300 rounded-md footer-link">Twitter</a>
                 <!-- Add more social links as needed -->
             </div>
         </div>
@@ -247,27 +247,6 @@
 
     <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
-    <script>
-    // Responsive Navbar Toggle with Slide Down Animation
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        menuToggle.addEventListener('click', function() {
-            if (navLinks.classList.contains('hidden')) {
-                navLinks.classList.remove('hidden');
-                setTimeout(() => {
-                    navLinks.classList.remove('-translate-y-4', 'opacity-0');
-                    navLinks.classList.add('translate-y-0', 'opacity-100');
-                }, 10); // allow DOM to update
-            } else {
-                navLinks.classList.remove('translate-y-0', 'opacity-100');
-                navLinks.classList.add('-translate-y-4', 'opacity-0');
-                setTimeout(() => {
-                    navLinks.classList.add('hidden');
-                }, 300); // match transition duration
-            }
-        });
-    });
-    </script>
 </body>
 </html>
+ 

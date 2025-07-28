@@ -6,9 +6,8 @@
 /* Base styles for the body and font */
 body {
     font-family: 'Inter', sans-serif;
-    /* Default text color and background for the entire body */
-    color: #1e293b; /* Slate 900 */
-    background-color: #f8fafc; /* Light Slate 50 */
+    color: #222;
+    background-color: #fff;
     line-height: 1.6; /* Improve readability */
 }
 
@@ -27,7 +26,7 @@ body {
     bottom: 0; /* Position at the bottom of the heading */
     width: 50%; /* Initial width of the underline */
     height: 4px; /* Thickness of the underline */
-    background-color: #6366f1; /* Indigo 500 */
+    background-color: #c1121f; /* White underline for section heading */
     border-radius: 9999px; /* Fully rounded corners for the underline */
     transition: width 0.3s ease-in-out; /* Smooth transition for width change */
 }
@@ -67,11 +66,25 @@ body {
 
 /* Styling for the social media icons in the footer */
 footer a {
+    color: #fff;
     text-decoration: none; /* Remove underline from links */
 }
 
 footer a:hover {
+    color: #c1121f;
     text-decoration: underline; /* Add underline on hover */
+}
+
+/* Footer link styles */
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #c1121f;
+    text-decoration: underline;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -82,5 +95,28 @@ footer a:hover {
     .section-heading::after {
         left: 50%; /* Center the underline */
         transform: translateX(-50%); /* Adjust for perfect centering */
+    }
+}
+
+/* Hero Section Background Image */
+.hero-background {
+    background: none;
+}
+
+.hero-background::before {
+    display: none;
+}
+
+/* Hero section text alignment for left layout on desktop */
+#hero .container {
+    /* Remove text-align center on desktop */
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #hero .container {
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 }
